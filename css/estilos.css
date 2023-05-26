@@ -1,0 +1,203 @@
+body {
+    background: #2f4b26;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+
+}
+
+.conteudo {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #B3B492;
+  padding: 55px;
+  padding-bottom: 0;
+  border-radius: 12px;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topo input {
+  width: 350px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #85A662;
+  outline: none;
+  font-size: 1.2rem;
+  background: #85A662;
+  color: white;
+}
+
+.topo input::placeholder {
+  color: #ffffff85;
+}
+
+.topo input:focus{
+  border-color: #5E7545;
+}
+
+.topo button {
+  min-width: 54px ;
+  min-height: 54px;
+  padding: 0;
+  border-radius: 12px;
+  border: 1px solid #5E7545;
+  background: #5E7545;
+  color: white;
+  outline: none;
+}
+
+.topo button:hover {
+    background: #85A66280;
+    border-color: #85A66280;
+    cursor: pointer;
+}
+
+#listaTarefas {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 55px;
+}
+
+#listaTarefas li {
+  padding: 20px;
+  background: #85A662;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#listaTarefas li:first-child {
+  margin-top: 55px;
+}
+
+.btnAcao{
+  border-radius: 20px;
+  border: 1px solid #85A662;
+  width: 38px;
+  height: 38px;
+  margin-left: 8px;
+  cursor: pointer;
+  background: #5E7545;
+  color: white;
+}
+
+.btnAcao:hover {
+  background: #5E754580;
+}
+
+.textoTarefa {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 290px;
+  white-space: nowrap;
+}
+
+#janelaEdicao{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #B3B492;
+    border: 1px solid #B3B492;
+    width: 415px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none;
+}
+
+#janelaEdicao.abrir {
+  display: block !important;
+}
+
+#janelaEdicaoFundo {
+    position: fixed;
+    top: 0;
+    background-color: #2f4b26;
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 100;
+    right: 0;
+    display: none
+}
+
+#janelaEdicaoFundo.abrir {
+  display: block !important;
+}
+
+#janelaEdicaoBtnFechar {
+  position: absolute;
+  top: -25px;
+  right: -18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #4d6138;
+  background: #5E7545;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+#janelaEdicaoBtnFechar:hover {
+  background: #85A662;
+  border-color: #4d6138;
+  cursor: pointer;
+}
+
+form {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.frm-linha {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.frm-linha label {
+  margin-bottom: 7px;
+}
+
+.frm-linha input {
+  padding: 15px;
+  border-radius: 12px;
+  outline: none;
+  border: 1px solid #5E754550;
+  font-size: 1.2rem;
+  background: #85A662;
+  color: #fff;
+}
+
+.frm-linha input:focus{
+  border-color: #5E7545;
+}
+
+.frm-linha button {
+  background: #5E7545;
+  border: 1px solid #4d6138;
+  padding: 7px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-size: 1.3rem;
+  outline: none;
+}
+
+.frm-linha button:hover {
+  background: #85A662;
+}
